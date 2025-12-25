@@ -2,6 +2,7 @@ from time import sleep
 from src.Calculate.Calculate import eval
 from src.Discord.Discord import send_message, get_message
 
+user_name = "baihufox"
 last_id = None
 
 while True:
@@ -15,7 +16,7 @@ while True:
 
     n = eval(msg["content"].split(" ")[0])
 
-    if n is not None and msg["author"]["username"] != "baihufox":
+    if n is not None and msg["author"]["username"] != user_name:
         send_message(n + 1)
         print(f"發送數字: {n + 1}")
 

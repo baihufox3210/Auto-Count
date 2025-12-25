@@ -21,15 +21,16 @@
    ```
 
 2. **設定環境變數**：
-   在專案根目錄下建立 `.env` 檔案，並填入您的 Discord Token：
+   在專案根目錄下建立 `.env` 檔案，並填入您的資訊：
    ```env
-   DISCORD_TOKEN=您的_DISCORD_TOKEN
+   DISCORD_TOKEN=DISCORD_TOKEN
+   CHANNEL_ID=CHANNEL_ID
    ```
 
-3. **設定頻道 ID**：
-   在 `src/Discord/Discord.py` 中，修改 `channel_id` 變數為您要運作的頻道 ID：
+3. **設定過濾使用者** (選用)：
+   在 `main.py` 中，您可以修改 `user_name` 變數來指定要排除的使用者名稱（預設為 `baihufox`）：
    ```python
-   channel_id = 1390211810266976357  # 請替換為您的頻道 ID
+   user_name = "user_name"
    ```
 
 ## 🚀 使用方法

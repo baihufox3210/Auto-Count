@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 token = os.getenv("DISCORD_TOKEN")
-channel_id = 1390211810266976357
+channel_id = os.getenv("CHANNEL_ID")
 
 url = f"https://discord.com/api/v10/channels/{channel_id}/messages"
 
