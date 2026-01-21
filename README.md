@@ -1,3 +1,5 @@
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=baihufox3210)]
+
 # Auto Count
 
 一個自動化的 Discord 數字接龍機器人。此工具能夠自動讀取特定頻道中的最新數字訊息，解析其數學表達式，並自動發送下一個數字。
